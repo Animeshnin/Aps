@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__logo">
+            <picture>
+                <source srcset="images/cat-logo-mobile.webp" media="(max-width: 768px)">
+                <source srcset="images/cat-logo-mobile.avif" media="(max-width: 768px)">
+                <source type="image/webp" srcset="images/cat-logo@1x.webp" 1x>
+                <img src="images/cat-logo@1x.png" alt="logo" width="50%">
+            </picture>
+        </div>
+            <div class="header_slogan">
+                <h2 class="slogan">Koшaчий блoг</h2>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu_list-item"><a href="" class="menu_list-link">Link1</a></li> 
+                    <li class="menu_list-item"><a href="" class="menu_list-link">Link2</a></li>
+                    <li class="menu_list-item"><a href="" class="menu_list-link">Link</a></li>
+                    <li class="menu_list-item"><a href="" class="menu_list-link">Link</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="main">
+        <section class="news">
+            <article>
+                <picture>
+                    <source type="image/avif" srcset="images/cat@1x.avif 1x, images/cat@2x.avif 2x">
+                    <source type="image/webp" srcset="images/cat@1x.webp 1x, images/cat@2x.webp 2x">
+                </picture>
+                <img class="picture" width="500" height="500" src="images/cat@1x.jpeg" srcset="images/cat@2x.jpeg 2x"  alt="Милый рыжий котик">
+            </article>
+            <article class="feature">
+                <h2 class="feature__title">
+                    <a class="feature__link">
+                       Милый рыжий котик 
+                    </a>
+                </h2>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+
+}
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: #fafafa; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 10rem;
+    gap: 20px;
+    container-type: inline-size;
+    container-name: header;
+    }
+.slogan {
+   font-size: 28px;
+   font-weight: 700;
+   color:#5f150c;
+    }
+@container header (max-width: 900px){
+    .slogan{
+        font-size: clamp(1rem, 0.818rem + 0.7767vw, 1.75rem);
+    }
+.logo{
+    width: clamp(30%, 3cqw, 50%);
+}
+}
+
+@media (max-width: 1000px) {
+    .header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__logo{
+        text-align: center;
+    }
+}
+
+
+.menu__list {
+   display: flex; gap: 5rem;
+   list-style: none;
+}
+.menu_list-link {
+    text-decoration: none;
+    font-size: 20px; 
+    font-weight: 700;
+    color: #5f150c;
+}
+
+.main{
+    padding: 5% 15%;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.picture{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.feature{
+    position: relative;
+    display: grid;
+    align-items: end;
+    background-image: image-set(
+        url('../images/cat@2x.webp') 2x,
+        url('../images/cat@1x.webp') 1x,
+        url('../images/cat@2x.avif') 2x,
+        url('../images/cat@1x.avif') 1x,
+        url('../images/cat@2x.jpeg') 2x,
+        url('../images/cat@1x.jpeg') 1x
+
+    );
+    background-size: cover;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+}
+
+.feature__title{
+    padding: 0.7em;
+    color: white;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.feature__link{
+    color: white;
+    text-decoration: none;
+}
